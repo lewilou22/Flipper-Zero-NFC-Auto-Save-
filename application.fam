@@ -1,0 +1,15 @@
+App(
+    appid="nfc_autosave",
+    name="NFC Autosave",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="nfc_autosave_app",
+    stack_size=8 * 1024,
+    requires=["gui", "nfc", "storage"],
+    fap_category="NFC",
+    fap_version=(0, 4),
+    fap_icon="nfc_autosave.png",
+    fap_description="Continuously scan NFC tags and auto-save each dump as a .nfc file",
+    fap_author="lewi-nfc-labs",
+    fap_weburl="https://github.com/",
+    fap_icon_assets="images",
+)
